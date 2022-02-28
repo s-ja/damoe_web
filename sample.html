@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다모애</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <h1>form 태그 연습 p.134</h1>
+    <form name="sample_order" action="" method="post" name="sample_form">
+        <div class="user_inputs">
+            <div class="name_field">
+                <label for="user_name">이름</label>
+                <input type="text" id="user_name" name="user_name">
+                <!-- name이라는 속성을 통해 서버로 전송 / for와 id는 일치해야 함, 스타일을 위해서도 -->
+            </div>
+            <div class="email_field">
+                <label for="user_email">이메일</label>
+                <input type="text" id="user_email" name="user_email">
+            </div>
+            <div class="sns_field">
+                <label for="user_sns">SNS주소</label>
+                <input type="url" id="user_sns" name="user_sns">
+            </div>
+            <div class="address">
+                <label for="address">주소</label>
+                <input type="text" id="user_address" name="user_address">
+             </div>
+        </div>
+        <!-- <label>이름 : <input type="text" title="name"></label>
+        <label>이메일 : <input type="text" title="email"></label>
+        <label>SNS 주소 : <input type="text" title="address"></label> -->
+        <!-- <label for="email"></label>
+        이메일 : <input type="email" id="email" title="email">
+        후자를 더 많이 씀 -->
+    </form>
 </body>
 </html>
