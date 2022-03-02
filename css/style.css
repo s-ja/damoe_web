@@ -128,7 +128,7 @@ body{
 }
 .theraphy_items li{
     box-sizing: border-box;
-    width: 319px;
+    width: 310px;
     height: 415px;
     float: left;
     border: 1px solid #ccc;
@@ -220,7 +220,7 @@ body{
     height: 500px;
     margin: 0 auto; */
 }
-.sub_page .article_wrap article:nth-child(1){
+.sub_page.article_wrap article:nth-child(1){
     width: 100%;
     overflow: hidden;
 }
@@ -273,9 +273,35 @@ body{
     border: 1px solid #666;
     padding: 10px;
     background: aliceblue;
-    text-align: center;
+    /* text-align: center; */
     overflow: scroll;
     height: 100px;
+}
+.agreement_text{
+    /* display: inline-block; */
+    text-align: right;
+    padding-top: 10px;
+}
+.buttons{
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.permit, .denie{
+    display: inline-block;
+    background: royalblue;
+    color: aliceblue;
+    border-style: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.denie{
+    background-color: rgb(148, 201, 247);
+    color: #000;
 }
 /* label{
     display: inline-block;
