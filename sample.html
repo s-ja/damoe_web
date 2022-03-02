@@ -52,35 +52,59 @@
             </div>
         </div>
     </div>
-
-    <form name="sample_order" action="" method="post" name="sample_form">
-        <div class="user_inputs">
-            <div class="name_field">
-                <label for="user_name">이름</label>
-                <input type="text" id="user_name" name="user_name">
-                <!-- name이라는 속성을 통해 서버로 전송 / for와 id는 일치해야 함, 스타일을 위해서도 -->
-            </div>
-            <div class="email_field">
-                <label for="user_email">이메일</label>
-                <input type="text" id="user_email" name="user_email">
-            </div>
-            <div class="sns_field">
-                <label for="user_sns">SNS주소</label>
-                <input type="url" id="user_sns" name="user_sns">
-            </div>
-            <div class="address">
-                <label for="address">주소</label>
-                <input type="text" id="user_address" name="user_address">
-             </div>
+    <section id="main" class="sub_page">
+        <h2>sample</h2>
+        <h3>무료 샘플신청서</h3>
+        <div class="article_wrap">
+            <article>
+                <h2 class="display_none">>샘플 신청서 - 사용자 입력 부분</h2>
+                <form action="" name="sample_form">
+                    <div class="form_wrap">
+                        <h3>✔신청서</h3>
+                        <div class="user_form">
+                            <ul>
+                                <li>
+                                    <label for="user_name">이름</label>
+                                    <input type="text" id="user_name" name="user_name" maxlength="20" placeholder="사용자 이름, 필수 ex> 안승지">
+                                </li>
+                                <li>
+                                    <label for="user_email">이메일</label>
+                                    <input type="email" id="user_email" name="user_email" placeholder="사용자 이메일, 필수 ex> dkstmdwl0615@naver.com">
+                                </li>
+                                <li>
+                                    <label for="user_sns">이메일</label>
+                                    <input type="url" id="user_sns" name="user_sns" placeholder="사용자 SNS ex> insta.com/asj">
+                                </li>
+                                <li>
+                                    <label for="user_address1">주소</label>
+                                    <input type="text" id="user_address1" name="user_address1" placeholder="광주광역시 서구 경열로...">
+                                    <input type="button" id="search_address" onclick="address_find()" value="검색">
+                                    <input type="text" id="user_address2" name="user_address2" placeholder="000동 000호">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="agreement_form">
+                            <h3>✔개인정보 &middot; 수집이용동의</h3>
+                            <div class="agreement">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellat vel animi natus sint eaque tenetur. Dolorem consequatur mollitia ut sapiente praesentium error illum eveniet quo facilis pariatur, assumenda quidem.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellat vel animi natus sint eaque tenetur. Dolorem consequatur mollitia ut sapiente praesentium error illum eveniet quo facilis pariatur, assumenda quidem.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellat vel animi natus sint eaque tenetur. Dolorem consequatur mollitia ut sapiente praesentium error illum eveniet quo facilis pariatur, assumenda quidem.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellat vel animi natus sint eaque tenetur. Dolorem consequatur mollitia ut sapiente praesentium error illum eveniet quo facilis pariatur, assumenda quidem.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellat vel animi natus sint eaque tenetur. Dolorem consequatur mollitia ut sapiente praesentium error illum eveniet quo facilis pariatur, assumenda quidem.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, repellat vel animi natus sint eaque tenetur. Dolorem consequatur mollitia ut sapiente praesentium error illum eveniet quo facilis pariatur, assumenda quidem.
+                            </div>
+                            <label for="user_agreement">개인정보 수집,이용에 동의 합니다.</label>
+                            <input type="checkbox" id="user_agreement" name="user_agreement">
+                        </div>
+                        <div class="buttons">
+                            <input type="submit"value="신청">
+                            <input type="reset"value="취소">
+                        </div>
+                    </div>
+                </form>
+            </article>
         </div>
-        <!-- <label>이름 : <input type="text" title="name"></label>
-        <label>이메일 : <input type="text" title="email"></label>
-        <label>SNS 주소 : <input type="text" title="address"></label> -->
-        <!-- <label for="email"></label> 
-        이메일 : <input type="email" id="email" title="email">
-        후자를 더 많이 씀 -->
-    </form>
-    
+    </section>
     <aside>
         <h2 class="display_none">이벤트 정보</h2>
         <div class="outer_wrap">
@@ -115,5 +139,10 @@
             </div>
         </div>
     </footer>
+<script>
+    function address_find(){
+        alert("DB 점검으로 인해 해당 서비스 이용이 불가합니다.")
+    }
+</script>
 </body>
 </html>

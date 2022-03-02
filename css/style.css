@@ -1,0 +1,368 @@
+@charset "utf-8";
+/* 시험 중에는 써 줘야 함 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 문서의 여백값 0 / 초기화 */
+ul{
+    list-style-type: none;
+}
+a, a:link{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background: #fff url("../images/bg.png");
+    /* background-position: 0 0;
+    background-repeat: repeat;
+    background-attachment: scroll; 기본값이라 안적어도 된다. */
+    /* 경로의 앞 뒤에 따옴표를 쳐주는 것이 좋다, 경로상에 공백이 있을수 있기에, 그럼 못 읽음 */
+    /* backgroun: url("../images/bg.png") 0 0 repeat scroll ; 4줄을 한줄로 */
+    color: #000;
+    font-size: 14px;
+    font-family: 'Maven Pro', 'Noto Sans KR', sans-serif;
+}
+/* ========header======== */
+.header_wrap{
+    width: 1000px;
+    margin: 50px auto;
+    /* background-color: gold; */
+    overflow: hidden;
+}
+.header_logo{
+    float: left;
+}
+.header_nav{
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+    border-left: 1px solid #000;
+    float: left;
+    margin-left: 50px;
+    padding-left: 10px;
+}
+.header_nav li:hover{
+    color: #604449;
+    
+}
+.header_nav li{
+    margin-left: 10px;
+}
+.links{
+    float: right;
+}
+.links li{
+    float: left;
+    margin-left: 8px;
+    
+}
+/* ========header======== */
+.hero{
+    background: aqua url("../images/visual_bg.jpg") no-repeat center / cover;
+    height: 400px;
+}
+.hero_wrap{
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    /* background: gold; */
+    position: relative;
+}
+#new{
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+}
+/* ========article======== */
+.display_none{
+    display: none;
+}
+/* 구글 아이콘 사이징 Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+/* 아이콘 색깔 넣는 코드 */
+.material-icons.orange600 { color: #FB8C00; }
+.material-icons.blue600 { color: #2e00fb; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+/* ===========user_form========== */
+#main.sub_page >h2,.sub_page >h3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.sub_page > h2{
+    margin-top: 100px;
+    font-size: 1.8rem;
+}
+.sub_page > h3{
+    font-size: 0.9rem;
+    color: #666;
+}
+/* ===========main========== */
+.article_wrap{
+    max-width: 1000px;
+    /* 반응형과 관련된 태그 */
+    margin: 100px auto;
+    /* background: gold; */
+    overflow: hidden;
+    /* float 해제, 넘치는 컨텐츠 숨기기 */
+}
+.article_wrap article{
+    float: left;
+}
+.article_wrap article h2 {
+    text-transform: capitalize;
+    margin: 0 0 20px 0;
+}
+.upper{
+    text-transform: uppercase;
+}
+.theraphy_items li{
+    box-sizing: border-box;
+    width: 319px;
+    height: 415px;
+    float: left;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
+.theraphy_items li:hover{
+    border: 1px solid #604449;
+}
+.theraphy_items li:hover img{
+    transform: scale(1.2);
+    /* 변형: 크기를 기존 대비 120% */
+    /* transition: all .3s; */
+    /* 트렌지션 모든 속성 0.3초 속도로 */
+}
+.theraphy_items li img{
+    transition: all .3s;
+    /* 트렌지션 모든 속성 0.3초 속도로 */
+}
+.theraphy_items li .overlay{
+    position: absolute;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+    /* 레이어의 계층 순서 - 숫자값 클수록 높게 */
+}
+/* .overlay :hover{
+    display: block;
+} */
+.theraphy_items li:hover .overlay{
+    display: block;
+}
+.select_btns{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    /* margin-left: -50px;
+    margin-top: -25px; */
+}
+.select_btns div{
+    display: inline-block;
+}
+/* .cart{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 6px;
+} */
+.cart:hover .material-icons.md-light{
+    color: #ccc;
+    transition: 0.3s;
+}
+.buy:hover .material-icons.md-light{
+    color: #ccc;
+    transition: 0.3s;
+}
+/* .cart:hover{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 6px;
+} */
+/* 혼자서 해봤던 포지셔닝 코드 시작*/
+/* .cart{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+}
+.buy{
+    display: inline-block;
+} */
+/* 혼자서 해봤던 포지셔닝 코드 끝*/
+.theraphy_items li:nth-child(1){
+    /* 2개의 li중 첫번째 li를 지정 */
+    margin-right: 21px;
+}
+.theraphy_items li:nth-child(2){
+    margin-right: 22px;
+}
+/* ========article======== */
+/* ============sample.html============ */
+.user_form{
+    background: #c4c4c4;
+    color: aliceblue;
+    box-sizing: border-box;
+    padding: 50px;
+    /* width: 1000px;
+    height: 500px;
+    margin: 0 auto; */
+}
+.sub_page .article_wrap article:nth-child(1){
+    width: 100%;
+    overflow: hidden;
+}
+.user_form li{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.user_form label{
+    margin-right: 20px;
+    display: inline-block;
+    width: 100px;
+}
+.user_form input{
+    padding: 10px 0;
+    text-indent: 20px;
+    border-radius: 10px;
+    /* border-style: none; */
+    border: 1px solid #ddd;
+    /* outline: none; */
+    /* border-style: none; */
+}
+.user_form input:focus{
+    background: aliceblue;
+}
+#user_name, #user_email, #user_sns{
+    width: calc(100% - 150px);
+}
+#user_address1{
+    width: calc(100% - 210px);
+}
+#user_address2{
+    margin-left: 125px;
+    width: calc(100% - 210px);
+}
+#search_address{
+    background: #666;
+    color: aliceblue;
+    border-style: none;
+    width: 50px;
+    height: 40px;
+    padding: 15px 10px;
+    text-indent: 0;
+    /* text-align: center; */
+    vertical-align: top;
+}
+.agreement_form > h3{
+    margin-top: 20px;
+}
+.agreement{
+    border: 1px solid #666;
+    padding: 10px;
+    background: aliceblue;
+    text-align: center;
+    overflow: scroll;
+    height: 100px;
+}
+/* label{
+    display: inline-block;
+    width: 500px;
+    font-size: 16px;
+    text-align: left;
+} */
+/* input{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 100%;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.user_inputs > div{
+    margin: 0 0 20px 0;
+    아랫쪽만 20px
+} */
+/* ============sample.html END============ */
+/* ========aside======== */
+/* .wrap{
+    float: left;
+}
+.event_description{
+    margin-left: 20px;
+} */
+.outer_wrap{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    /* height: 50px; */
+    padding: 15px 0;
+    /* background: rgb(191, 191, 191); */
+}
+.aside_wrap{
+    /* color: aliceblue; */
+    width: 1000px;
+    margin: 0 auto;
+    /* background: gold; */
+    overflow: hidden;
+    text-transform: capitalize;
+}
+/* 클리어 픽스 기법 -외우면 됨 */
+.aside_wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.aside_wrap h3{
+    float: left;
+    margin-right: 30px;
+}
+.aside_wrap p{
+    float: left;
+}
+/* ========aside======== */
+/* ========footer======== */
+footer{
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    /* background: #666; */
+    /* color: aliceblue; */
+    clear: both;
+}
+.footer_wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.etc{
+    margin: 25px 0;
+}
+.etc li{
+    display: inline-block;
+    margin: 0 10px;
+    /* float: left; */
+}
+address p{
+    display: inline-block;
+}
+p.copyright{
+    display: block;
+}
+.footer_logo{
+    position: absolute;
+    right: -20px;
+    top: 20px;
+}
