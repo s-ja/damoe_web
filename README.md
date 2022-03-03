@@ -7,7 +7,8 @@
 
 ## 진행단계
 *요구분석
-*설계
+*설계 [figma] : https://www.figma.com/file/Rl7spfuP2aRbQ6ZFSqrtWD/damoe_sample?node-id=1%3A3
+"UIUX 설계 화면"
 *구현
 *포지셔닝과 플로팅의 실제적인 활용 연습
 *등등등
