@@ -40,7 +40,7 @@ body{
     border-left: 1px solid #000;
     float: left;
     margin-left: 50px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .header_nav li:hover{
     color: #604449;
@@ -53,8 +53,9 @@ body{
     float: right;
 }
 .links li{
-    float: left;
-    margin-left: 8px;
+    /* float: left; */
+    display: inline-block;
+    margin-left: px;
     
 }
 /* ========header======== */
@@ -95,7 +96,7 @@ body{
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 /* ===========user_form========== */
-#main.sub_page >h2,.sub_page >h3{
+.sub_page >h2, .sub_page >h3{
     text-align: center;
     text-transform: uppercase;
 }
@@ -136,7 +137,7 @@ body{
     position: relative;
 }
 .theraphy_items li:hover{
-    border: 1px solid #604449;
+    border: 1px solid #666;
 }
 .theraphy_items li:hover img{
     transform: scale(1.2);
@@ -154,8 +155,8 @@ body{
     width: 100%;
     height: 100%;
     z-index: 1000;
-    display: none;
     /* 레이어의 계층 순서 - 숫자값 클수록 높게 */
+    display: none;
 }
 /* .overlay :hover{
     display: block;
@@ -220,7 +221,7 @@ body{
     height: 500px;
     margin: 0 auto; */
 }
-.sub_page.article_wrap article:nth-child(1){
+.sub_page .article_wrap article:nth-child(1){
     width: 100%;
     overflow: hidden;
 }
@@ -232,13 +233,14 @@ body{
     margin-right: 20px;
     display: inline-block;
     width: 100px;
+    text-align: right;
 }
 .user_form input{
     padding: 10px 0;
     text-indent: 20px;
     border-radius: 10px;
-    /* border-style: none; */
     border: 1px solid #ddd;
+    border-style: none;
     /* outline: none; */
     /* border-style: none; */
 }
@@ -261,7 +263,7 @@ body{
     border-style: none;
     width: 50px;
     height: 40px;
-    padding: 15px 10px;
+    /* padding: 15px 10px; */
     text-indent: 0;
     /* text-align: center; */
     vertical-align: top;
@@ -277,17 +279,58 @@ body{
     overflow: scroll;
     height: 100px;
 }
-.agreement_text{
+.agreement_check{
     /* display: inline-block; */
     text-align: right;
-    padding-top: 10px;
+    margin: 20px 0 50px;
 }
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-color: #FB8C00;
+    box-sizing: content-box;
+    margin-right: 20px;
+}
+input[type=checkbox] + label{
+    font-size: 100px;
+    background: #FB8C00;
+}
+/* +++++++++++ */
+input[type=checkbox]:checked{
+    background-color: #FB8C00;
+    color: #604449;
+    font-size: 2rem;
+    width: 100px;
+}
+/* +++++++++++ */
 .buttons{
+    text-align: center;
     width: 300px;
     height: 100px;
     margin: 0 auto;
     text-align: center;
 }
+/* .buttons input[type=submit]{
+    background: red;
+    color: aliceblue;
+    width: 250px;
+    height: 100px;
+    border:0;
+    font-size: 1.5rem;
+}
+.buttons input[type=reset]{
+    background: aliceblue;
+    color: #666;
+    width: 250px;
+    height: 100px;
+    border: 1px solid #666;
+    font-size: 1.5rem;
+}
+.buttons input[type=submit]:hover{
+    background-color: #2e00fb;
+    color: #FB8C00;
+} */
 .permit, .denie{
     display: inline-block;
     background: royalblue;
@@ -380,6 +423,9 @@ footer{
     display: inline-block;
     margin: 0 10px;
     /* float: left; */
+}
+address{
+    font-style: normal;
 }
 address p{
     display: inline-block;
