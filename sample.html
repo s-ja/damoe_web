@@ -24,6 +24,17 @@
             <img src="images/side_img.png" alt="다모애 헤어토닉 이벤트">
         </a>
     </div>
+    <div id="modal">
+        <div class="modal_wrap">
+            <div class="close_modal">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="modal_title">
+                <h3>고객센터</h3>
+                <h4>이메일, 문의 접수</h4>
+            </div>
+        </div>
+    </div>
     <h1 class="display_none">다모애 테라피 샴푸</h1>
     <!-- header+.hero+section#main+aside+footer|c -->
     <header>
@@ -43,9 +54,9 @@
             </nav>
             <div class="links">
                 <ul>
-                    <li><a href="#"><img src="images/top_icon1.png" alt="main"></a></li>
-                    <li><a href="#"><img src="images/top_icon2.png" alt="search"></a></li>
-                    <li><a href="#"><img src="images/top_icon3.png" alt="mail"></a></li>
+                    <li><a href="/"><img src="images/top_icon1.png" alt="main"></a></li>
+                    <li><a href="#" onclick="open_mailer()"><img src="images/top_icon2.png" alt="mail"></a></li>
+                    <li><a href="#" ><img src="images/top_icon3.png" alt="search"></a></li>
                     <!-- .links>ul>li*3>a[href=#]>img[src=images/top_icon$.png] -->
                 </ul>
             </div>
@@ -147,10 +158,6 @@
             </div>
         </div>
     </footer>
-<script>
-    function address_find(){
-        alert("DB 점검으로 인해 해당 서비스 이용이 불가합니다.")
-    }
-</script>
+    <script src="script/main.js"></script>
 </body>
 </html>

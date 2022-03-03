@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 안 써주면 브라우저가 판단해야 함 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damoe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 위는 구글 폰트 cdn 먼저 불러오고 스타일을 붙여야함. -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <!-- 구글 폰트 아이콘 삽입 코드 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/04c1ea1f1c.js" crossorigin="anonymous"></script>
+    <!-- 폰트어썸 v6 kit ? -->
+</head>
+<body>
+    <div class="side_banner">
+        <a href="#"onclick="alert('이벤트가 마감되었습니다.')">
+            <img src="images/side_img.png" alt="다모애 헤어토닉 이벤트">
+        </a>
+    </div>
+    <h1 class="display_none">다모애 테라피 샴푸</h1>
+    <!-- header+.hero+section#main+aside+footer|c -->
+    <div id="modal">
+        <div class="modal_wrap">
+            <div class="close_modal">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="modal_title">
+                <h3>고객센터</h3>
+                <h4>이메일, 문의 접수</h4>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h2 class="display_none">브랜드 로고와 내비게이션 시스템</h2>
+        <div class="header_wrap">
+            <div class="header_logo">
+                <a href="#"><img src="images/logo.png" alt="(주)다모애"></a>
+            </div>
+            <nav class="header_nav">
+                <h3 class="display_none">네비게이션</h3>
+                <ul>
+                    <li><a href="company.html">다모애</a></li>
+                    <li><a href="product.html">제품소개</a></li>
+                    <li><a href="sample.html">샘플신청</a></li>
+                    <li><a href="cs.html">고객센터</a></li>
+                </ul>
+            </nav>
+            <div class="links">
+                <ul>
+                    <li><a href="/"><img src="images/top_icon1.png" alt="main"></a></li>
+                    <li><a href="#" onclick="open_mailer()"><img src="images/top_icon2.png" alt="search"></a></li>
+                    <li><a href="#"><img src="images/top_icon3.png" alt="mail"></a></li>
+                    <!-- .links>ul>li*3>a[href=#]>img[src=images/top_icon$.png] -->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero_wrap">
+            <div id="new">
+                <img src="images/visual_img.png" alt="신제품:테라피 골드 샴푸">
+            </div>
+        </div>
+    </div>
+    <section id="main">
+        <h2 class="display_none">테라피 제품과 광고이미지</h2>
+        <div class="article_wrap">
+            <article>
+                <h2>damoe theraphy items</h2>
+                <ul class="theraphy_items">
+                    <!-- Damoe Theraphy Items -->
+                    <li>
+                        <div class="overlay">
+                            <div class="select_btns">
+                                <div class="cart"><a href="#" title="장바구니 담기"onclick="alert('장바구니에 담겼습니다!')">
+                                    <span class="material-icons md-36 md-light">
+                                        shopping_cart
+                                        </span>
+                                </a></div>
+                                <div class="buy"><a href="#" title="바로 구매하기" onclick="confirm('지금 결제하시겠습니까?')">
+                                    <!-- 자바스크립트 문법 일부 -->
+                                    <span class="material-icons md-36 md-light">
+                                        credit_card
+                                        </span>
+                                </a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/prd_img1.jpg" alt="다모애 골드 샴푸">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="overlay">
+                            <div class="select_btns">
+                                <div class="cart"><a href="#" title="장바구니 담기"onclick="alert('장바구니에 담겼습니다!')">
+                                    <span class="material-icons md-36 md-light">
+                                        shopping_cart
+                                        </span>
+                                </a></div>
+                                <div class="buy"><a href="#" title="바로 구매하기" onclick="confirm('지금 결제하시겠습니까?')">
+                                    <!-- 자바스크립트 문법 일부 -->
+                                    <span class="material-icons md-36 md-light">
+                                        credit_card
+                                        </span>
+                                </a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="images/prd_img2.jpg" alt="다모애 헤어 토닉">
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <!-- Damoe PR -->
+                <h2>damoe <span class="upper">pr</span></h2>
+                <div>
+                    <a href="#"><img src="images/pr.jpg" alt="다모애 한방:차 샴푸"></a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <aside>
+        <h2 class="display_none">이벤트 정보</h2>
+        <div class="outer_wrap">
+            <div class="aside_wrap">
+                <h3>event</h3>
+                <p>현재 진행중인 이벤트가 없습니다</p>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <h2 class="display_none">다모애 웹사이트 저작권 및 연락처, 주소 정보</h2>
+        <div class="footer_wrap">
+            <div class="etc">
+                <ul>
+                    <li><a href="#">개인정보 취급 방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                </ul>
+            </div>
+            <address>
+                <p>상호 : 다모애</p>
+                <p>주소: 광주광역시 서구 경열로 3, 다모애 테라피 연구소</p>
+                <p>대표전화 : 062-334-4444</p>
+                <p>개인정보취급관리자 : 홍길동</p>
+                <p>이메일 : cs-center@damoe.com</p>
+                <p>&copy; damoe. all rights reserved.</p>
+            </address>
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="images/footer_logo.png" alt="다모애 로고">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+</body>
+</html>
