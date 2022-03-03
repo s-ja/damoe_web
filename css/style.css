@@ -23,6 +23,12 @@ body{
     font-size: 14px;
     font-family: 'Maven Pro', 'Noto Sans KR', sans-serif;
 }
+/* ====side_banner======== */
+.side_banner{
+    position: fixed;
+    right: 5%;
+    top: 10%;
+}
 /* ========header======== */
 .header_wrap{
     width: 1000px;
@@ -306,32 +312,42 @@ input[type=checkbox]:checked{
 /* +++++++++++ */
 .buttons{
     text-align: center;
-    width: 300px;
-    height: 100px;
+    /* width: 1000px;
+    height: 100px; */
     margin: 0 auto;
     text-align: center;
 }
-/* .buttons input[type=submit]{
-    background: red;
+
+
+.buttons input[type=submit]{
+    background: #666;
     color: aliceblue;
-    width: 250px;
-    height: 100px;
+    width: 100px;
+    height: 30px;
     border:0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
 }
 .buttons input[type=reset]{
     background: aliceblue;
     color: #666;
-    width: 250px;
-    height: 100px;
+    width: 100px;
+    height: 30px;
     border: 1px solid #666;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
 }
 .buttons input[type=submit]:hover{
-    background-color: #2e00fb;
+    background-color: red;
     color: #FB8C00;
-} */
-.permit, .denie{
+}
+.buttons input[type=reset]:hover{
+    background-color: aqua;
+    color: aliceblue;
+}
+
+
+/* .permit, .denie{
     display: inline-block;
     background: royalblue;
     color: aliceblue;
@@ -345,7 +361,9 @@ input[type=checkbox]:checked{
 .denie{
     background-color: rgb(148, 201, 247);
     color: #000;
-}
+} */
+
+
 /* label{
     display: inline-block;
     width: 500px;
