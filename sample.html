@@ -33,6 +33,30 @@
                 <h3>고객센터</h3>
                 <h4>이메일, 문의 접수</h4>
             </div>
+            <ul class="modal_list">
+                <li>
+                    <div class="name">
+                        <label for="modal_name">이름</label>
+                        <input required type="text" id="modal_name" name="modal_name" maxlength="20" placeholder="사용자 이름, 필수 ex> 안승지">
+                    </div>
+                </li>
+                <li>
+                    <div class="emai">
+                        <label for="modal_email">이메일</label>
+                        <input required type="email" id="modal_email" name="modal_email" placeholder="사용자 이메일, 필수 ex> dkstmdwl0615@naver.com">
+                    </div>
+                </li>
+                <li>
+                    <div class="point">
+                        <label for="modal_point">문의사항</label>
+                        <input required type="text" id="modal_point" name="modal_point" maxlength="100" placeholder="문의사항을 적어주세요 (100자 내외)">
+                    </div>
+                </li>
+            </ul>
+            <div class="modal_buttons">
+                <input class="permit" type="submit" value="제출">
+                <input class="denie" type="reset" value="취소">
+            </div>
         </div>
     </div>
     <h1 class="display_none">다모애 테라피 샴푸</h1>

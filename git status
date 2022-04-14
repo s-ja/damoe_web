@@ -1,0 +1,13 @@
+[1mdiff --git a/sample.html b/sample.html[m
+[1mindex 3390573..5cae223 100644[m
+[1m--- a/sample.html[m
+[1m+++ b/sample.html[m
+[36m@@ -10,6 +10,6 @@[m
+     <link rel="stylesheet" href="css/style.css">[m
+ </head>[m
+ <body>[m
+[31m-    [m
+[32m+[m[32m    <form action=""></form>[m
+ </body>[m
+ </html>[m
+\ No newline at end of file[m
